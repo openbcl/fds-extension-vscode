@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - MIT License
 
-## [0.1.0] - 2023-05-26
+## [0.1.1] - 2023-05-26
 
 ### Added
 - Syntax highlighting
