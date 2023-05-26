@@ -5,7 +5,7 @@ This extension for Visual Studio Code is used for syntax highlighting of FDS inp
 
 ## How to install this extension
 
-* Download the extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=FDS).
+* Download the extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=openbcl.fds).
 
 ## Extension Settings
 
