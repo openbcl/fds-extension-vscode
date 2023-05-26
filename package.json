@@ -3,6 +3,7 @@
   "displayName": "FDS Input File",
   "description": "Fire Dynamics Simulator Input File",
   "version": "0.1.0",
+  "icon": "https://raw.githubusercontent.com/openbcl/fds-extension-vscode/main/images/icon.png",
   "author": {
     "name": "Robert Weiße"
   },
