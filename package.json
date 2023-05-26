@@ -4,7 +4,7 @@
   "description": "Fire Dynamics Simulator Input File",
   "version": "0.1.0",
   "icon": "images/icon.png",
-  "publisher": "rweisse",
+  "publisher": "openbcl",
   "repository": {
     "url": "https://github.com/openbcl/fds-extension-vscode"
   },
