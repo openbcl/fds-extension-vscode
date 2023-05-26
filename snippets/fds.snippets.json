@@ -1,0 +1,202 @@
+{
+	"new BNDF": {
+		"prefix": "BNDF",
+		"body": [ "BNDF $0" ],
+		"description": "Boundary File Output"
+	},
+	"new CATF": {
+		"prefix": "CATF",
+		"body": [ "CATF $0" ],
+		"description": "Concatenate Input Files"
+	},
+	"new CLIP": {
+		"prefix": "CLIP",
+		"body": [ "CLIP $0" ],
+		"description": "Clipping Parameters"
+	},
+	"new COMB": {
+		"prefix": "COMB",
+		"body": [ "COMB $0" ],
+		"description": "Combustion Parameters"
+	},
+	"new CSVF": {
+		"prefix": "CSVF",
+		"body": [ "CSVF $0" ],
+		"description": "Velocity Input File"
+	},
+	"new CTRL": {
+		"prefix": "CTRL",
+		"body": [ "CTRL $0" ],
+		"description": "Control Function Parameters"
+	},
+	"new DEVC": {
+		"prefix": "DEVC",
+		"body": [ "DEVC $0" ],
+		"description": "Device Parameters"
+	},
+	"new DUMP": {
+		"prefix": "DUMP",
+		"body": [ "DUMP $0" ],
+		"description": "Output Parameters"
+	},
+	"new GEOM": {
+		"prefix": "GEOM",
+		"body": [ "GEOM $0" ],
+		"description": "Unstructured Geometry"
+	},
+	"new HEAD": {
+		"prefix": "HEAD",
+		"body": [ "HEAD CHID='${1:${TM_FILENAME_BASE/(.*)/${1:/downcase}/}}', TITLE='${2:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}'" ],
+		"description": "Input File Header"
+	},
+	"new HOLE": {
+		"prefix": "HOLE",
+		"body": [ "HOLE $0" ],
+		"description": "Obstruction Cutout"
+	},
+	"new HVAC": {
+		"prefix": "HVAC",
+		"body": [ "HVAC $0" ],
+		"description": "Heating, Vent., Air Cond."
+	},
+	"new INIT": {
+		"prefix": "INIT",
+		"body": [ "INIT $0" ],
+		"description": "Initial Condition"
+	},
+	"new ISOF": {
+		"prefix": "ISOF",
+		"body": [ "ISOF $0" ],
+		"description": "Isosurface File Output"
+	},
+	"new MATL": {
+		"prefix": "MATL",
+		"body": [ "MATL $0" ],
+		"description": "Material Property"
+	},
+	"new MESH": {
+		"prefix": "MESH",
+		"body": [ "MESH ID='$1', IJK=${2:10},${3:10},${4:10}, XB=$5,$6,$7,$8,$9,$10" ],
+		"description": "Mesh Parameters"
+	},
+	"new MISC": {
+		"prefix": "MISC",
+		"body": [ "MISC $0" ],
+		"description": "Miscellaneous"
+	},
+	"new MOVE": {
+		"prefix": "MOVE",
+		"body": [ "MOVE $0" ],
+		"description": "Transformation Parameters"
+	},
+	"new MULT": {
+		"prefix": "MULT",
+		"body": [ "MULT $0" ],
+		"description": "Multiplier Parameters"
+	},
+	"new OBST": {
+		"prefix": "OBST",
+		"body": [ "OBST $0" ],
+		"description": "Obstruction"
+	},
+	"new PART": {
+		"prefix": "PART",
+		"body": [ "PART $0" ],
+		"description": "Lagrangian Particle"
+	},
+	"new PRES": {
+		"prefix": "PRES",
+		"body": [ "PRES $0" ],
+		"description": "Pressure Solver Parameters"
+	},
+	"new PROF": {
+		"prefix": "PROF",
+		"body": [ "PROF $0" ],
+		"description": "Profile Output"
+	},
+	"new PROP": {
+		"prefix": "PROP",
+		"body": [ "PROP $0" ],
+		"description": "Device Property"
+	},
+	"new RADF": {
+		"prefix": "RADF",
+		"body": [ "RADF $0" ],
+		"description": "Radiation Output File"
+	},
+	"new RADI": {
+		"prefix": "RADI",
+		"body": [ "RADI $0" ],
+		"description": "Radiation"
+	},
+	"new RAMP": {
+		"prefix": "RAMP",
+		"body": [ "RAMP $0" ],
+		"description": "Ramp Profile"
+	},
+	"new REAC": {
+		"prefix": "REAC",
+		"body": [ "REAC $0" ],
+		"description": "Reaction Parameters"
+	},
+	"new SLCF": {
+		"prefix": "SLCF",
+		"body": [ "SLCF $0" ],
+		"description": "Slice File Output"
+	},
+	"new SM3D": {
+		"prefix": "SM3D",
+		"body": [ "SM3D $0" ],
+		"description": "Smoke3D Parameters"
+	},
+	"new SPEC": {
+		"prefix": "SPEC",
+		"body": [ "SPEC $0" ],
+		"description": "Species Parameters"
+	},
+	"new SURF": {
+		"prefix": "SURF",
+		"body": [ "SURF $0" ],
+		"description": "Surface Properties"
+	},
+	"new TABL": {
+		"prefix": "TABL",
+		"body": [ "TABL $0" ],
+		"description": "Tabulated Particle Data"
+	},
+	"new TIME": {
+		"prefix": "TIME",
+		"body": [ "TIME $0" ],
+		"description": "Simulation Time"
+	},
+	"new TRNX": {
+		"prefix": "TRNX",
+		"body": [ "TRNX $0" ],
+		"description": "Mesh Stretching X"
+	},
+	"new TRNY": {
+		"prefix": "TRNY",
+		"body": [ "TRNY $0" ],
+		"description": "Mesh Stretching Y"
+	},
+	"new TRNZ": {
+		"prefix": "TRNZ",
+		"body": [ "TRNZ $0" ],
+		"description": "Mesh Stretching Z"
+	},
+	"new VENT": {
+		"prefix": "VENT",
+		"body": [ "VENT $0" ],
+		"description": "Vent Parameters"
+	},
+	"new WIND": {
+		"prefix": "WIND",
+		"body": [ "WIND $0" ],
+		"description": "Wind Parameters"
+	},
+	"new ZONE": {
+		"prefix": "ZONE",
+		"body": [ "ZONE $0" ],
+		"description": "Pressure Zone Parameters"
+	}
+}

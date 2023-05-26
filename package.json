@@ -1,0 +1,40 @@
+{
+  "name": "fds",
+  "displayName": "FDS Input File",
+  "description": "Fire Dynamics Simulator Input File",
+  "version": "0.1.0",
+  "author": {
+    "name": "Robert Weiße"
+  },
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "fds",
+      "aliases": ["FDS", "fds"],
+      "extensions": [".fds"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "fds",
+      "scopeName": "source.fds",
+      "path": "./syntaxes/fds.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "fds",
+      "path": "./snippets/fds.snippets.json"
+    }],
+    "configurationDefaults": {
+      "[fds]": {
+        "editor.tabSize": 6,
+        "editor.snippetSuggestions": "top",
+        "editor.suggest.showSnippets": true
+      }
+    }
+  }
+}
