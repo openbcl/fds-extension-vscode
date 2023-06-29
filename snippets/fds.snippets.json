@@ -1,202 +1,202 @@
 {
 	"new BNDF": {
 		"prefix": "BNDF",
-		"body": [ "BNDF $0" ],
-		"description": "Boundary File Output"
+		"body": [ "BNDF CELL_CENTERED=${1|.FALSE.,.TRUE.|}, QUANTITY='$2'" ],
+		"description": "Boundary File Output (partial parameters)"
 	},
 	"new CATF": {
 		"prefix": "CATF",
-		"body": [ "CATF $0" ],
-		"description": "Concatenate Input Files"
+		"body": [ "CATF OTHER_FILES='$1'" ],
+		"description": "Concatenate Input Files (complete parameters)"
 	},
 	"new CLIP": {
 		"prefix": "CLIP",
-		"body": [ "CLIP $0" ],
-		"description": "Clipping Parameters"
+		"body": [ "CLIP CLIP_DT_RESTRICTIONS_MAX=${1:5}, MINIMUM_DENSITY=$2, MAXIMUM_DENSITY=$3, MINIMUM_TEMPERATURE=$4, MAXIMUM_TEMPERATURE=$5" ],
+		"description": "Clipping Parameters (complete parameters)"
 	},
 	"new COMB": {
 		"prefix": "COMB",
 		"body": [ "COMB $0" ],
-		"description": "Combustion Parameters"
+		"description": "Combustion Parameters (missing parameters)"
 	},
 	"new CSVF": {
 		"prefix": "CSVF",
-		"body": [ "CSVF $0" ],
-		"description": "Velocity Input File"
+		"body": [ "CSVF UVWFILE='$1'" ],
+		"description": "Velocity Input File (complete parameters)"
 	},
 	"new CTRL": {
 		"prefix": "CTRL",
-		"body": [ "CTRL $0" ],
-		"description": "Control Function Parameters"
+		"body": [ "CTRL FUNCTION_TYPE='$1', ID='$2', INITIAL_STATE=${3|.FALSE.,.TRUE.|}, INPUT_ID='$4'" ],
+		"description": "Control Function Parameters (partial parameters)"
 	},
 	"new DEVC": {
 		"prefix": "DEVC",
-		"body": [ "DEVC $0" ],
-		"description": "Device Parameters"
+		"body": [ "DEVC ID='$1, QUANTITY='$2', XYZ=$3,$4,$5" ],
+		"description": "Device Parameters (partial parameters)"
 	},
 	"new DUMP": {
 		"prefix": "DUMP",
-		"body": [ "DUMP $0" ],
-		"description": "Output Parameters"
+		"body": [ "DUMP DT_BNDF=$1, DT_DEVC=$2, DT_ISOF=$3, DT_PL3D=$4, DT_RESTART=$5, DT_SLCF=$6, NFRAMES=$7, PLOT3D_QUANTITY='$8'" ],
+		"description": "Output Parameters (partial parameters)"
 	},
 	"new GEOM": {
 		"prefix": "GEOM",
 		"body": [ "GEOM $0" ],
-		"description": "Unstructured Geometry"
+		"description": "Unstructured Geometry (missing parameters)"
 	},
 	"new HEAD": {
 		"prefix": "HEAD",
 		"body": [ "HEAD CHID='${1:${TM_FILENAME_BASE/(.*)/${1:/downcase}/}}', TITLE='${2:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}'" ],
-		"description": "Input File Header"
+		"description": "Input File Header (complete parameters)"
 	},
 	"new HOLE": {
 		"prefix": "HOLE",
-		"body": [ "HOLE $0" ],
-		"description": "Obstruction Cutout"
+		"body": [ "HOLE ID='$1', XB=$2,$3,$4,$5,$6,$7" ],
+		"description": "Obstruction Cutout (partial parameters)"
 	},
 	"new HVAC": {
 		"prefix": "HVAC",
 		"body": [ "HVAC $0" ],
-		"description": "Heating, Vent., Air Cond."
+		"description": "Heating, Vent., Air Cond. (missing parameters)"
 	},
 	"new INIT": {
 		"prefix": "INIT",
 		"body": [ "INIT $0" ],
-		"description": "Initial Condition"
+		"description": "Initial Condition (missing parameters)"
 	},
 	"new ISOF": {
 		"prefix": "ISOF",
-		"body": [ "ISOF $0" ],
-		"description": "Isosurface File Output"
+		"body": [ "ISOF QUANTITY='$1', VALUE=$2" ],
+		"description": "Isosurface File Output (partial parameters)"
 	},
 	"new MATL": {
 		"prefix": "MATL",
-		"body": [ "MATL $0" ],
-		"description": "Material Property"
+		"body": [ "MATL CONDUCTIVITY=${1:0.}, DENSITY=${2:0.}, EMISSIVITY=${3:0.9}, ID='$4', SPECIFIC_HEAT=${5:0.}" ],
+		"description": "Material Property (partial parameters)"
 	},
 	"new MESH": {
 		"prefix": "MESH",
-		"body": [ "MESH ID='$1', IJK=${2:10},${3:10},${4:10}, XB=$5,$6,$7,$8,$9,$10" ],
-		"description": "Mesh Parameters"
+		"body": [ "MESH ID='$1', IJK=${2:10},${3:10},${4:10}, MPI_PROCESS=$5, XB=$6,$7,$8,$9,$10,$11" ],
+		"description": "Mesh Parameters (partial parameters)"
 	},
 	"new MISC": {
 		"prefix": "MISC",
-		"body": [ "MISC $0" ],
-		"description": "Miscellaneous"
+		"body": [ "MISC BNDF_DEFAULT=${1|.TRUE.,.FALSE.|}, RESTART=${2|.FALSE.,.TRUE.|}" ],
+		"description": "Miscellaneous (partial parameters)"
 	},
 	"new MOVE": {
 		"prefix": "MOVE",
 		"body": [ "MOVE $0" ],
-		"description": "Transformation Parameters"
+		"description": "Transformation Parameters (missing parameters)"
 	},
 	"new MULT": {
 		"prefix": "MULT",
 		"body": [ "MULT $0" ],
-		"description": "Multiplier Parameters"
+		"description": "Multiplier Parameters (missing parameters)"
 	},
 	"new OBST": {
 		"prefix": "OBST",
-		"body": [ "OBST $0" ],
-		"description": "Obstruction"
+		"body": [ "OBST ID='$1', PERMIT_HOLE=${2|.TRUE.,.FALSE.|}, SURF_ID='$3', XB=$4,$5,$6,$7,$8,$9" ],
+		"description": "Obstruction (partial parameters)"
 	},
 	"new PART": {
 		"prefix": "PART",
 		"body": [ "PART $0" ],
-		"description": "Lagrangian Particle"
+		"description": "Lagrangian Particle (missing parameters)"
 	},
 	"new PRES": {
 		"prefix": "PRES",
 		"body": [ "PRES $0" ],
-		"description": "Pressure Solver Parameters"
+		"description": "Pressure Solver Parameters (missing parameters)"
 	},
 	"new PROF": {
 		"prefix": "PROF",
-		"body": [ "PROF $0" ],
-		"description": "Profile Output"
+		"body": [ "PROF CELL_CENTERED=${1|.FALSE.,.TRUE.|}, FORMAT_INDEX=${2:1}, ID='$3', INIT_ID='$4', IOR=$5, QUANTITY='$6', XYZ=$7,$8,$9" ],
+		"description": "Profile Output (complete parameters)"
 	},
 	"new PROP": {
 		"prefix": "PROP",
 		"body": [ "PROP $0" ],
-		"description": "Device Property"
+		"description": "Device Property (missing parameters)"
 	},
 	"new RADF": {
 		"prefix": "RADF",
-		"body": [ "RADF $0" ],
-		"description": "Radiation Output File"
+		"body": [ "RADF I_STEP=${1:1}, J_STEP=${2:1}, K_STEP=${3:1}, XB=$4,$5,$6,$7,$8,$9" ],
+		"description": "Radiation Output File (complete parameters)"
 	},
 	"new RADI": {
 		"prefix": "RADI",
 		"body": [ "RADI $0" ],
-		"description": "Radiation"
+		"description": "Radiation (missing parameters)"
 	},
 	"new RAMP": {
 		"prefix": "RAMP",
-		"body": [ "RAMP $0" ],
-		"description": "Ramp Profile"
+		"body": [ "RAMP F=$1, ID='$2', T=$3" ],
+		"description": "Ramp Profile (partial parameters)"
 	},
 	"new REAC": {
 		"prefix": "REAC",
-		"body": [ "REAC $0" ],
-		"description": "Reaction Parameters"
+		"body": [ "REAC CO_YIELD=$1, FUEL='$2', ID='$3', SOOT_YIELD=$4" ],
+		"description": "Reaction Parameters (partial parameters)"
 	},
 	"new SLCF": {
 		"prefix": "SLCF",
-		"body": [ "SLCF $0" ],
-		"description": "Slice File Output"
+		"body": [ "SLCF CELL_CENTERED=${1|.FALSE.,.TRUE.|}, ID='$2', ${3|PBX,PBY,PBZ|}=$4, QUANTITY='$5', VECTOR=${6|.FALSE.,.TRUE.|}" ],
+		"description": "Slice File Output (partial parameters)"
 	},
 	"new SM3D": {
 		"prefix": "SM3D",
-		"body": [ "SM3D $0" ],
-		"description": "Smoke3D Parameters"
+		"body": [ "SM3D QUANTITY='$1', SPEC_ID='$2'" ],
+		"description": "Smoke3D Parameters (complete parameters)"
 	},
 	"new SPEC": {
 		"prefix": "SPEC",
 		"body": [ "SPEC $0" ],
-		"description": "Species Parameters"
+		"description": "Species Parameters (missing parameters)"
 	},
 	"new SURF": {
 		"prefix": "SURF",
-		"body": [ "SURF $0" ],
-		"description": "Surface Properties"
+		"body": [ "SURF BACKING='${1:EXPOSED}', COLOR='$2', ID='$3', MATL_ID='$4', THICKNESS=$5" ],
+		"description": "Surface Properties (partial parameters)"
 	},
 	"new TABL": {
 		"prefix": "TABL",
-		"body": [ "TABL $0" ],
-		"description": "Tabulated Particle Data"
+		"body": [ "TABL ID='$1', TABLE_DATA=$2" ],
+		"description": "Tabulated Particle Data (complete parameters)"
 	},
 	"new TIME": {
 		"prefix": "TIME",
-		"body": [ "TIME $0" ],
-		"description": "Simulation Time"
+		"body": [ "TIME T_BEGIN=${1:0.}, T_END=${2:1.}" ],
+		"description": "Simulation Time (partial parameters)"
 	},
 	"new TRNX": {
 		"prefix": "TRNX",
-		"body": [ "TRNX $0" ],
-		"description": "Mesh Stretching X"
+		"body": [ "TRNX CC=$1, ID='$2', IDERIV=$3, MESH_NUMBER=$4, PC=$5" ],
+		"description": "Mesh Stretching X (complete parameters)"
 	},
 	"new TRNY": {
 		"prefix": "TRNY",
-		"body": [ "TRNY $0" ],
-		"description": "Mesh Stretching Y"
+		"body": [ "TRNY CC=$1, ID='$2', IDERIV=$3, MESH_NUMBER=$4, PC=$5" ],
+		"description": "Mesh Stretching Y (complete parameters)"
 	},
 	"new TRNZ": {
 		"prefix": "TRNZ",
-		"body": [ "TRNZ $0" ],
-		"description": "Mesh Stretching Z"
+		"body": [ "TRNZ CC=$1, ID='$2', IDERIV=$3, MESH_NUMBER=$4, PC=$5" ],
+		"description": "Mesh Stretching Z (complete parameters)"
 	},
 	"new VENT": {
 		"prefix": "VENT",
-		"body": [ "VENT $0" ],
-		"description": "Vent Parameters"
+		"body": [ "VENT COLOR='$1', ID='$2', SURF_ID='$3', XB=$4,$5,$6,$7,$8,$9" ],
+		"description": "Vent Parameters (partial parameters)"
 	},
 	"new WIND": {
 		"prefix": "WIND",
 		"body": [ "WIND $0" ],
-		"description": "Wind Parameters"
+		"description": "Wind Parameters (missing parameters)"
 	},
 	"new ZONE": {
 		"prefix": "ZONE",
 		"body": [ "ZONE $0" ],
-		"description": "Pressure Zone Parameters"
+		"description": "Pressure Zone Parameters (missing parameters)"
 	}
 }

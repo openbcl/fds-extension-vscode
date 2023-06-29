@@ -7,8 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2023-06-29
+
 ### Added
-- MIT License
+- Snippets for &BNDF, &CATF, &CLIP, &CSVF, &CTRL, &DEVC, &DUMP, &HOLE, &ISOF, &MATL, &MISC, &OBST, &PROF, &RADF, &RAMP, &REAC, &SLCF, &SM3D, &SURF, &TABL, &TIME, &TRNX, &TRNY, &TRNZ and &VENT
+
+### Changed
+- Improved syntax highlighting for parameters of groups
 
 ## [0.1.1] - 2023-05-26
 
