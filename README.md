@@ -20,7 +20,5 @@ This extension contributes the following settings through the `contributes.confi
 ```
 
 ## Known Issues
-
-- Currently snippets for the following namelist groups are only provided without any parameters: COMB, GEOM, HVAC, INIT, MOVE, MULT, PART, PRES, PROP, RADI, SPEC, WIND, ZONE. These snippets are marked in their description by the addition "missing parameters".
-
-- Some snippets for specific namelist groups only provide the most common parameters. You can distinguish the snippets of namelist groups with partial parameters from those with complete parameters by looking for the additional information "partial parameters" and "complete parameters" in the description.
+- Some snippets for certain namelist groups contain only the most common parameters. You can distinguish the snippets of namelist groups with partial parameter sets from those with complete parameter sets by looking for the additional information "partial parameters" and "complete parameters" in the tooltip description.
+- Currently snippets for the following namelist groups are only provided without any parameter sets: `COMB`, `GEOM`, `HVAC`, `INIT`, `MOVE`, `MULT`, `PART`, `PRES`, `PROP`, `RADI`, `SPEC`, `WIND`, `ZONE`. These snippets are marked in their tooltip description by the addition "missing parameters".

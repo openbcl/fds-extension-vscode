@@ -31,7 +31,7 @@
 	},
 	"new DEVC": {
 		"prefix": "DEVC",
-		"body": [ "DEVC ID='$1, QUANTITY='$2', XYZ=$3,$4,$5" ],
+		"body": [ "DEVC ID='$1', QUANTITY='$2', XYZ=$3,$4,$5" ],
 		"description": "Device Parameters (partial parameters)"
 	},
 	"new DUMP": {
