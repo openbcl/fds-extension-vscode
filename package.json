@@ -2,7 +2,7 @@
   "name": "fds",
   "displayName": "FDS Input File",
   "description": "Fire Dynamics Simulator Input File",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "icon": "images/icon.png",
   "publisher": "openbcl",
   "repository": {
